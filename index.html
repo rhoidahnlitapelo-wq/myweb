@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rhoidah's Computer Science student portfolio at Mulungushi University.">
+  <title>Rhoidah Litapelo | Student Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="hero" id="top">
+    <div class="hero-inner">
+      <p class="eyebrow">MULUNGUSHI UNIVERSITY · ICT251</p>
+      <h1>Rhoidah N Litapelo</h1>
+      <p class="hero-subtitle">Computer Science Student</p>
+      <p class="hero-intro">Welcome to my student portfolio. This website shares a little about me, the things I enjoy, my learning goals, and the skills I am developing as I learn about technology.</p>
+      <a class="button button-light" href="#projects">View My Projects &amp; Skills</a>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="brand" href="#top">RNL<span>.</span></a>
+      <button class="nav-toggle" id="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#learning-plan">Learning Plan</a></li>
+        <li><a href="#projects">Projects &amp; Skills</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#media">My Media</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-pressed="false">Use dark theme</button>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <section id="about" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2>About Me</h2>
+      </div>
+      <p>My name is Rhoidah N Litapelo, and I am a student at Mulungushi University pursuing a Bachelor's degree in Computer Science. I am learning how websites are planned, built, styled and made interactive. I enjoy exploring new ideas and practising what I learn through small activities. My learning plan helps me organise my study time, revise class topics and build my confidence. This portfolio brings together some of my interests, learning goals, photos and media in one place.</p>
+      <div class="callout"><strong>My focus:</strong> keep learning, practise regularly and use each project as an opportunity to improve.</div>
+    </section>
+
+    <section id="hobbies" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">OUTSIDE THE CLASSROOM</p>
+        <h2>My Hobbies</h2>
+      </div>
+      <div class="hobby-grid">
+        <article class="hobby-card"><span class="card-number">01</span><h3>Reading</h3><p>Reading gives me time to explore ideas and learn from different topics.</p></article>
+        <article class="hobby-card"><span class="card-number">02</span><h3>Netball</h3><p>Netball is an activity I enjoy, with teamwork and communication at its heart.</p></article>
+        <article class="hobby-card"><span class="card-number">03</span><h3>Coding</h3><p>Coding lets me practise problem-solving and turn instructions into something useful.</p></article>
+      </div>
+    </section>
+
+    <section id="learning-plan" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">SMALL STEPS, STEADY PROGRESS</p>
+        <h2>My Learning Plan</h2>
+      </div>
+      <h3>My learning goals</h3>
+      <ol class="goal-list">
+        <li><span>01</span><div><strong>Practise HTML and CSS</strong><p>Use learning resources such as W3Schools to practise building and styling web pages.</p></div></li>
+        <li><span>02</span><div><strong>Learn Java and JavaFX</strong><p>Build understanding through regular practice and examples.</p></div></li>
+        <li><span>03</span><div><strong>Build a small project each month</strong><p>Apply what I have learned and review what could be improved.</p></div></li>
+      </ol>
+      <h3>Weekly study schedule</h3>
+      <div class="table-wrap">
+        <table>
+          <caption>A weekly plan for study and revision</caption>
+          <thead><tr><th scope="col">Day</th><th scope="col">Subject</th><th scope="col">Time</th><th scope="col">Activity</th></tr></thead>
+          <tbody>
+            <tr><td>Monday</td><td>Java Programming</td><td>16:00–17:00</td><td>Practise coding</td></tr>
+            <tr><td>Tuesday</td><td>Mathematics</td><td>16:00–17:00</td><td>Solve exercises</td></tr>
+            <tr><td>Wednesday</td><td>Digital Logic</td><td>16:00–17:00</td><td>Review lecture notes</td></tr>
+            <tr><td>Thursday</td><td>Physics</td><td>16:00–17:00</td><td>Practise questions</td></tr>
+            <tr><td>Friday</td><td>Revision</td><td>16:00–17:00</td><td>Review the week's work</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I AM DEVELOPING</p>
+        <h2>Projects &amp; Skills</h2>
+      </div>
+      <p class="section-intro">These examples describe learning areas from my current studies. Use the search box to filter them.</p>
+      <div class="filter-row">
+        <label for="project-search">Search projects or skills</label>
+        <div class="search-controls">
+          <input id="project-search" type="search" placeholder="Try HTML, layout, Java…" autocomplete="off">
+          <button class="button button-secondary" id="reset-search" type="button">Reset</button>
+        </div>
+      </div>
+      <p id="filter-status" class="status-message" aria-live="polite">Showing all 3 projects and skills.</p>
+      <div class="project-grid" id="project-list">
+        <article class="project-card" data-search="html css personal website web structure styling">
+          <p class="project-tag">WEB DEVELOPMENT</p><h3>Personal Website</h3>
+          <p>Practise structuring a page with HTML and styling it with an external CSS file.</p>
+          <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-detail-1">Show details</button>
+          <div class="project-details" id="project-detail-1" hidden><p>Skills practised: semantic sections, navigation links, readable typography, responsive layouts and accessible controls.</p></div>
+        </article>
+        <article class="project-card" data-search="css responsive layout flexbox grid design">
+          <p class="project-tag">PAGE DESIGN</p><h3>Responsive Layout</h3>
+          <p>Use spacing, colour, flexible sizing and media queries to support different screen sizes.</p>
+          <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-detail-2">Show details</button>
+          <div class="project-details" id="project-detail-2" hidden><p>Skills practised: CSS selectors, the box model, contrast, hover and keyboard-focus states.</p></div>
+        </article>
+        <article class="project-card" data-search="javascript programming events functions dom validation">
+          <p class="project-tag">PROGRAMMING</p><h3>Interactive Web Features</h3>
+          <p>Use JavaScript to respond to actions and update what visitors see on the page.</p>
+          <button class="details-toggle" type="button" aria-expanded="false" aria-controls="project-detail-3">Show details</button>
+          <div class="project-details" id="project-detail-3" hidden><p>Skills practised: variables, functions, events, form validation and DOM updates.</p></div>
+        </article>
+      </div>
+      <p id="no-projects" class="empty-state" hidden>No projects or skills match that search. Try another word or reset the search.</p>
+    </section>
+
+    <section id="photos" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">PHOTO GALLERY</p>
+        <h2>My Photos</h2>
+      </div>
+      <p class="section-intro">Browse the photos using the Previous and Next controls.</p>
+      <div class="gallery-viewer">
+        <figure class="featured-photo">
+          <img id="gallery-image" src="images/photo1.jpg" alt="Personal photograph, image 1">
+          <figcaption id="gallery-caption">Personal photograph 1</figcaption>
+        </figure>
+        <div class="gallery-controls">
+          <button class="button button-secondary" id="gallery-previous" type="button">Previous photo</button>
+          <p id="gallery-count" aria-live="polite">Photo 1 of 3</p>
+          <button class="button button-secondary" id="gallery-next" type="button">Next photo</button>
+        </div>
+      </div>
+      <div class="photo-gallery" aria-label="All photos">
+        <figure class="photo-card"><img src="images/photo1.jpg" alt="Personal photograph, image 1" loading="lazy"><figcaption>Personal photograph 1</figcaption></figure>
+        <figure class="photo-card"><img src="images/photo2.jpg" alt="Personal photograph, image 2" loading="lazy"><figcaption>Personal photograph 2</figcaption></figure>
+        <figure class="photo-card"><img src="images/photo3.jpg" alt="Personal photograph, image 3" loading="lazy"><figcaption>Personal photograph 3</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="media" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">WATCH AND LISTEN</p>
+        <h2>My Media</h2>
+      </div>
+      <div class="media-grid">
+        <article class="media-card">
+          <h3>Introduction Video</h3>
+          <video controls preload="metadata">
+            <source src="videos/intro.mp4" type="video/mp4">
+            Your browser does not support the video element.
+          </video>
+          <p><strong>Summary:</strong> This short video is an introduction to me as a Computer Science student at Mulungushi University.</p>
+        </article>
+        <article class="media-card">
+          <h3>Audio Recording</h3>
+          <audio controls preload="metadata">
+            <source src="audio/voice.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+          <p><strong>Summary:</strong> Use the audio player to listen to the voice recording included with my website.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section">
+      <div class="section-heading">
+        <p class="eyebrow">GET IN TOUCH</p>
+        <h2>Contact Me</h2>
+      </div>
+      <p class="form-note">Browser demonstration only — no message is sent. Your entries are checked in this page and are not delivered to a server.</p>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Name <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="name" required aria-describedby="name-error">
+          <small class="field-error" id="name-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="email">Email address <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-describedby="email-error">
+          <small class="field-error" id="email-error"></small>
+        </div>
+        <div class="form-group">
+          <label for="message">Message <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here…" required aria-describedby="message-error"></textarea>
+          <small class="field-error" id="message-error"></small>
+        </div>
+        <button class="button" type="submit">Validate and preview</button>
+        <p id="form-feedback" class="status-message" role="status" aria-live="polite"></p>
+        <section id="form-preview" class="preview-card" aria-labelledby="preview-title" hidden>
+          <h3 id="preview-title">Validated message preview</h3>
+          <p><strong>Name:</strong> <span id="preview-name"></span></p>
+          <p><strong>Email:</strong> <span id="preview-email"></span></p>
+          <p><strong>Message:</strong></p>
+          <p id="preview-message" class="preview-message"></p>
+          <p class="success-note">The data was validated in this browser. No message was sent.</p>
+        </section>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>© 2026 Rhoidah N Litapelo · ICT251 Web Technologies</p>
+      <p>Built as a learning project at Mulungushi University.</p>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer">View Source on GitHub (add your repository link)</a>
+    </div>
+  </footer>
+</body>
+</html>
